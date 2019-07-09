@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      font-size:30pt;
+      
+    }
+    .static {
+      background-color:cadetblue;
+      padding: 5px;
+    }
+    .absolute {
+      background-color: darkolivegreen;
+      position:absolute;
+      width: 600px;
+      right:100px;
+      padding: 5px;
+    }
+    .fixed {
+      background-color: dimgray;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 500px;
+      height: 60%;
+      padding: 20px;
+    }
+    .relative {
+      background-color: mediumorchid;
+      position:relative;
+      width:500px;
+      left: 50px;
+      padding: 5px;
+    }
+    .sticky {
+      background-color: teal;
+      position:sticky;
+      top: 0;
+      padding:5px;
+
+    }
+    .initial {
+      position: initial;
+      width: 500px;
+      background-color:crimson;
+      padding: 5px;
+    }
+    code {
+      color:darkred;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <br><br><br><br><br><br><br><br>
+  <div class="fixed">
+    This div is Fixed, positioned in the bottom right. Here's how this one was positioned: <br>
+    <code>
+      .fixed { <br>
+      position: fixed; <br>
+      bottom: 0; <br>
+      right: 0; <br>
+    }
+    </code>
+  </div>
+  <div class="static">
+    This div is static. 
+    <br />
+    There is no code needed, because
+    <br />
+    static is the default, but to make it explicit:
+  </div>
+  <code>
+    .static { <br>
+      position: static; <br>
+    }
+  </code>
+  <br><br><br><br><br><br>
+  <div class="sticky">This div is sticky, set to stay at the top when it gets there. Here's the how this one was set up:</div>
+  <code>
+    .sticky { <br>
+      position:sticky; <br>
+      top: 0; <br>
+    }
+  </code>
+  <br><br><br><br><br><br><br><br><br><br><br>
+  <div class="absolute">This is an absolute div positioned to the right. Here's how this one was done:
+  <code>
+    .absolute { <br>
+      position:absolute; <br>
+      right:100px; <br>
+    }
+  </code>
+  </div>
+  <br><br><br><br><br><br><br><br><br>
+  <div class="relative">This is a relative div, positioned a little to the left of the last div. Here's how it was done:
+    <code>
+      .relative { <br>
+      position:relative; <br>
+      left: 50px; <br>
+    }
+    </code>
+  </div>
+  <br><br><br><br><br><br>
+  <div class="initial">This is a div reset to an initial value. Here's how it got that way: <br>
+  </div>
+  <code>
+    .initial { <br>
+      position: initial; <br>
+    }
+  </code>
+  
+
+
+  <!-- end breaks -->
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="static">This is a bonus div.
+    <br>
+    Congratulations for finding it.</div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
